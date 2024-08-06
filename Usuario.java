@@ -1,22 +1,22 @@
-public class Usuario {
-    private String name;
+public class Usuario{
+    private String nome;
     private String email;
-
-    public Usuario(String name, String email) {
-        this.name = name;
+    
+    public Usuario(String nome, String email){
+        this.nome = nome;
         this.email = email;
     }
-
-    public String getName() {
-        return name;
+    
+    public String getNome(){
+        return nome;
     }
-
-    public String getEmail() {
+    
+    public String getEmail(){
         return email;
     }
-
+    
     @Override
-    public String toString() {
-        return "Name: " + name + ", Email: " + email;
+    public String toString(){
+        return "\nNome: " + nome + "\nEmail: " + email; 
     }
 }
