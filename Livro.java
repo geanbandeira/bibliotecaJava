@@ -1,36 +1,42 @@
-public class Livro {
-    private String title;
+public class Livro{
+    private String titulo;
     private String author;
     private boolean estaEmprestado;
-
-    public Livro(String title, String author) {
-        this.title = title;
+    
+    public Livro(String titulo, String author){
+        this.titulo = titulo;
         this.author = author;
         this.estaEmprestado = false;
     }
-
-    public String getTitle() {
-        return title;
+    
+    public String getTitulo(){
+        return titulo;
     }
-
-    public String getAuthor() {
+    
+    public String getAuthor(){
         return author;
     }
-
-    public boolean estaEmprestado() {
+    
+    public boolean estaEmprestado(){
         return estaEmprestado;
     }
-
-    public void emprestado() {
+    
+    public void emprestado(){
         estaEmprestado = true;
     }
-
-    public void returnLivro() {
+    
+    public void returnLivro(){
         estaEmprestado = false;
     }
-
-    @Override
-    public String toString() {
-        return "Title: " + title + ", Author: " + author + ", Emprestado: " + estaEmprestado;
+    
+    public String toString(){
+        return "\nTitulo: " + titulo + "\nAuthor: " + author + "\nEmprestado: " + estaEmprestado; 
     }
+    
 }
+
+
+
+
+
+
