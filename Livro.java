@@ -25,18 +25,12 @@ public class Livro{
         estaEmprestado = true;
     }
     
-    public void returnLivro(){
+    public void returnEmprestado(){
         estaEmprestado = false;
     }
     
     public String toString(){
-        return "\nTitulo: " + titulo + "\nAuthor: " + author + "\nEmprestado: " + estaEmprestado; 
+        return "\nTitulo: " + titulo + "\nAuthor: " + author + "\nEmprestado: " + estaEmprestado;
     }
     
 }
-
-
-
-
-
-
