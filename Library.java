@@ -55,7 +55,6 @@ public class Library implements Serializable {
         return false;
     }
 
-    // Adicionando os métodos get e set para books e users
     public List<Livro> getLivros() {
         return livros;
     }
