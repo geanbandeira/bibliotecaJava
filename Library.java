@@ -31,9 +31,9 @@ public class Library implements Serializable {
         }
     }
 
-    public boolean livroEmprestado(String title, String nomeUsuario) {
+    public boolean livroEmprestado(String titulo, String nomeUsuario) {
         for (Livro livro : livros) {
-            if (livro.getTitle().equals(title) && !livro.estaEmprestado()) {
+            if (livro.getTitulo().equals(titulo) && !livro.estaEmprestado()) {
                 livro.estaEmprestado();
                 System.out.println(nomeUsuario + " emprestado " + title);
                 return true;
@@ -43,9 +43,9 @@ public class Library implements Serializable {
         return false;
     }
 
-    public boolean returnLivro(String title, String nomeUsuario) {
+    public boolean returnLivro(String titulo, String nomeUsuario) {
         for (Livro livro : livros) {
-            if (livro.getTitle().equals(title) && livro.estaEmprestado()) {
+            if (livro.getTitulo().equals(titulo) && livro.estaEmprestado()) {
                 livro.returnLivro();
                 System.out.println(nomeUsuario + " returned " + title);
                 return true;
