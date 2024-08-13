@@ -8,7 +8,7 @@ public class DatabaseManager{
     public static Connection getConnection() throws SQLException{
         return DriveManager.getConnection(JDBC_URL, USUARIO, PASSWORD);
     }
-    
+
     public static void createTables(){
         String createLivrosTrable = "CREATE TABLE IF NOT EXISTS livros (id INT AUTO_INCLEMENT PRIMARY KEY, titulo VARCHAR(255), autor VARCHAR(255), estaEmprestado BOOLEAN)";
         String createUsuariosTable = "CREATE TABLE IF NOT EXISTS usuarios (ID INT AUTO_INCLEMENT PRIMARY KEY, nome VARCHAR(255), email VARCHAR(255))";
